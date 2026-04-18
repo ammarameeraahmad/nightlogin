@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Website Development - Ammar Ameera Ahmad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #14171a;
+      color: #ddd;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      background: #21242b;
+      padding: 2rem 1rem 1.2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px #05050830;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+      color: #f3f6fa;
+      letter-spacing: 1.2px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: #91a4ba;
+      font-weight: 400;
+      margin: 0.3rem 0 0 0;
+    }
+    main {
+      padding: 2rem 1vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 85vh;
+    }
+    .pdf-container {
+      background: #22232b;
+      border-radius: 12px;
+      padding: 1.5vw;
+      max-width: 880px;
+      width: 100%;
+      box-shadow: 0 0 24px #090a1040;
+    }
+    embed, iframe {
+      display: block;
+      width: 100%;
+      aspect-ratio: 8.5 / 11;
+      min-height: 70vh;
+      background: #22232b;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 40px #08090c3b;
+    }
+    @media (max-width: 600px) {
+      .pdf-container {
+        padding: 0.5vw;
+        max-width: 99vw;
+      }
+      embed, iframe {
+        min-height: 60vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Website Development</h1>
+    <h2>Ammar Ameera Ahmad</h2>
+  </header>
+  <main>
+    <section class="pdf-container">
+      <embed src="Portfolio.pdf" type="application/pdf" />
+    </section>
+  </main>
+</body>
+</html>
